@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Task 3</title>
+  <script>
+      var dayArr = {
+          1 : 'Monday',
+          2 : 'Tuesday',
+          3 : 'Wednesday',
+          4 : 'Thursday',
+          5 : 'Friday',
+          6 : 'Saturday',
+          7 : 'Sunday',
+          8 : 'Monday',
+          9 : 'Tuesday',
+          10 : 'Wednesday',
+          11 : 'Thursday',
+          12 : 'Friday',
+          13 : 'Saturday',
+          14 : 'Sunday',
+          15 : 'Monday',
+          16 : 'Tuesday',
+          17 : 'Wednesday',
+      }
+
+      function dayCounter(arr, day) {
+          var tmp = 0;
+
+          for(let key in arr){
+              if(arr[key] == day) tmp++;
+          }
+          return tmp
+      }
+
+      console.log(`${dayCounter(dayArr,"Monday")} - Monday in object`);
+      console.log(`${dayCounter(dayArr,"Thursday")} - Thursday in object`);
+      console.log(`${dayCounter(dayArr,"Wednesday")} - Wednesday in object`);
+      console.log(`${dayCounter(dayArr,"Thursday")} - Thursday in object`);
+      console.log(`${dayCounter(dayArr,"Friday")} - Friday in object`);
+      console.log(`${dayCounter(dayArr,"Saturday")} - Saturday in object`);
+      console.log(`${dayCounter(dayArr,"Wednesday")} - Wednesday in object`);
+
+
+
+  </script>
+</head>
+<body>
+Work demonstration in console!
+</body>
+</html>
