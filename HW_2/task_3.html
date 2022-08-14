@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Task 3</title>
+  <script>
+      var binaryArray = [];
+      var enterNumberFlag = true;
+
+      while (enterNumberFlag === true) {
+          var start = prompt(`add a number?`);
+
+          start === "0" || start === "1" ? binaryArray.push(start)
+                                         : alert("err");
+          enterNumberFlag = confirm("add a number?");
+      }
+
+      alert(parseInt(binaryArray.toString()
+                                .replace(/[,]/, ""), 2));
+
+  </script>
+</head>
+<body>
+Work demonstration in console!
+</body>
+</html>

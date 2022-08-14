@@ -1,11 +1,3 @@
-<!-- lint disable no-literal-urls -->
+# Collection of my old javascript homework tasks
 
-<p align="center">
-
-</p>
-
-# Содержимое
-
-* [Downloads](#downloads)
-
-*
+# Feel free to use if you want or need it

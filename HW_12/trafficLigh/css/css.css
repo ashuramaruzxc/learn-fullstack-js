@@ -1,0 +1,74 @@
+.super-wrap{
+    width: 500px;
+    margin: auto;
+}
+
+.wrapper {
+    display: inline-block;
+    background:#333;
+    width: 150px;
+    height: 440px;
+    border-radius: 10px;
+    padding: 1px 0;
+    border: 6px solid #000;
+    margin: 2rem;
+}
+
+.circle {
+    background:#666;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-left: 15px;
+    margin-top: 20px;
+    line-height: 120px;
+    -webkit-transition: background-color 0.5s ease-out;
+    -o-transition: background-color 0.5s ease-out;
+    transition: background-color 0.5s ease-out;
+}
+/*Добавляем фоновый цвет*/
+.circleBGColor1 {
+    background-color: #f00;
+}
+.circleBGColor2 {
+    background-color: #ff0;
+}
+.circleBGColor3 {
+    background-color: #0f0;
+}
+
+
+.wrapperPed {
+    display: inline-block;
+    background:#333;
+    width: 150px;
+    height: 300px;
+    border-radius: 10px;
+    padding: 1px 0;
+    border: 6px solid #000;
+    margin: 2rem;
+
+}
+
+#knopka{
+    width: 10rem;
+    height: 10rem;
+    border-radius: 100%;
+    background: green;
+    border: none;
+    font-size: 2rem;
+    color: white;
+}
+#knopka:hover{
+    background-color: #0f9800;
+
+}
+
+#knopka:active{
+    background-color: #666666;
+}
+
+#knopka:disabled{
+    background-color: #666666;
+}
+

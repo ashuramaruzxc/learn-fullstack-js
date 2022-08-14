@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+
+</head>
+<body >
+<div id="listener">im is listener</div>
+<div id="bdy">
+  <span>HELLLLLOOOOOOO!!!</span>
+  <div>
+    <button onclick="eventMaker(this)">Hello!!</button>
+  </div>
+</div>
+
+</body>
+<script>
+    let event = new Event(`myEvent`,{bubbles : true});
+
+    function eventMaker(th){
+        console.log(`create event`);
+        th.dispatchEvent(event);
+    }
+
+
+    listener.addEventListener(`click`, ()=> console.log(`world`))
+    bdy.addEventListener(`myEvent`, (event)=>{
+                                                console.log(event.currentTarget.children);
+                                                for(let i of event.currentTarget.children){
+                                                    if(i.tagName === `SPAN`) i.style.color = 'red';
+                                                }
+    })
+</script>
+</html>
